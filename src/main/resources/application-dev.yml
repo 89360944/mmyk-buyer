@@ -21,9 +21,9 @@ spring:
     time-zone: GMT+8
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://gz-cynosdbmysql-grp-mh2itlkp.sql.tencentcdb.com:29335/s2shop_v7_dev?useUnicode=true&serverTimezone=GMT%2b8&characterEncoding=utf-8&useSSL=true
+    url: jdbc:mysql://gz-cynosdbmysql-grp-qqy7m68j.sql.tencentcdb.com:25820/shop_t?useUnicode=true&serverTimezone=GMT%2b8&characterEncoding=utf-8&useSSL=true
     username: root
-    password: 123456mysql
+    password: feddon_123456
     hikari:
       max-lifetime: 120000
   jpa:
