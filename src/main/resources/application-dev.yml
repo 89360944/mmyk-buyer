@@ -39,6 +39,7 @@ spring:
     timeout: 5000
 eureka:
   instance:
+    ip-address: 182.254.192.61
     prefer-ip-address: true
   client:
     serviceUrl:
