@@ -59,4 +59,4 @@ jobs:
             # 拉取最新latest版本镜像
             docker pull jzdphz/buyer
             # 运行最新latest版本镜像
-            docker run -d -p 8080:8080 jzdphz/buyer
+            docker run -d jzdphz/buyer
