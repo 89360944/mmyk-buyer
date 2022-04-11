@@ -1,0 +1,43 @@
+server:
+  port: 8080
+logging:
+  level:
+    root: info
+    com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver: WARN
+  file:
+    path: log
+spring:
+  application:
+    name: buyer-service
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://gz-cynosdbmysql-grp-mh2itlkp.sql.tencentcdb.com:29335/s2shop_v7_dev?useUnicode=true&serverTimezone=GMT%2b8&characterEncoding=utf-8&useSSL=true
+    username: root
+    password: 123456mysql
+    hikari:
+      max-lifetime: 120000
+  jpa:
+    show-sql: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+  redis:
+    database: 0
+    host: 111.231.5.229
+    port: 6379
+    password: redis123456aB
+    timeout: 5000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://182.254.192.61:8761/eureka/
