@@ -24,7 +24,7 @@ public class SwaggerConfig {
 
     @Bean
     public OpenAPI api() {
-        return new OpenAPI().addServersItem(new Server().url("http://182.254.192.61:8086/buyer"));
+        return new OpenAPI().addServersItem(new Server().url("http://182.254.192.61:8060/buyer"));
     }
 
 }
