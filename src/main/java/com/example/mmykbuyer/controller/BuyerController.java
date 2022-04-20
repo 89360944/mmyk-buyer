@@ -28,7 +28,7 @@ public class BuyerController {
     @ApiOperation("测试")
     @GetMapping(value = "/test")
     public Map<String, String> prod(String storeId, String token) {
-        System.out.println(storeId + ":" + token);
+        System.out.println(storeId + "::" + token);
         Map<String, String> map = new HashMap<>();
         map.put("storeId", storeId);
         map.put("token", token);
