@@ -19,7 +19,7 @@ import java.util.Map;
 
 @Api(tags = "买家")
 @RestController
-@RequestMapping("/buyer")
+//@RequestMapping("/buyer")
 public class BuyerController {
 
     @Autowired
