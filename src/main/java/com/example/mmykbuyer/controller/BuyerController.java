@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-@Api(tags = "买家")
+@Api(tags = "买家1")
 @RestController
 //@RequestMapping("/buyer")
 public class BuyerController {
